@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.iframes, .iframeHeading, .iframeBox {
+    display: none;
+}
+
+body {
+    font-family: 'Oswald', 'Times New Roman', Times, serif;
+    background: #ece9e9e1;
+}
+
+.navbar.bg {
+  background: #ece9e9;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 40px 30px;
+    left: 0;
+    top: 0;
+    transition: 0.1s;
+    z-index: 5;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    margin: 0px 20px;
+    font-size: 30px;
+}
+
+.links a {
+    color: black;
+}
+
+ul li:hover a, ul li:active a{
+    color: #1863b3;
+    text-decoration: underline;
+    padding: 7px;
+    border: 2px solid;
+}
+
+.t {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.tBackgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+.tText {
+    font-size: 60px;
+}
+
+.tText2 {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.title-box a{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: black;
+}
+
+.title-box a:hover, .title-box a:focus, .title-box a:active{
+    left: 640px;
+    top: 100px;
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 20px;;
+    background-color: white;
+    text-decoration: underline;
+    border: 4px solid #1863b3;;
+    padding: 5px 5px;
+}
+
+.info {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    background: #ece9e9e1;
+}
+
+.infoHeading {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.infoParagraph {
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    min-width: 300px;
+}
+
+.gridImages {
+    position: relative;
+    height: 2000px;
+    width: 100%;
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.gridImages .individualGrids {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.gridimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+   /* transition: .1s; */
+}
+
+.individualGrids:hover .gridimg {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.gridName {
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+.gridLink{
+    margin-left: 20px;
+    font-size: 15px;
+    position: relative;
+    color: white;
+}
+
+.gridLink::before {
+    position: absolute;
+    content: '';
+    left: -20px;
+    top: 5px;
+    background-image: url('../images/pin.png');
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+}
+/* Credit to the Modern Web Youtube channel, which was used for some inspiration on the home page's style */
+
+
+.footer {
+    padding-left: 5px;
+}
+
+.aboutHeading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    height: 200px;
+    width: 100%;
+    font-size: 50px;
+}
+
+.mainCon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.aboutImg {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 5px solid #baaaaae1;
+}
+
+.aboutText {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 90%;
+    font-size: 20px;
+}
+
+/* Locations page */
+.istanbulBox, .dubrovnikBox, .shenandoahBox, .montBox, .buzludzhaBox, .greeceBox, .egyptBox, .rilaBox {
+    padding-top: 80px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+   /* grid-template-rows: repeat(2, 1fr); */
+    width: 100%;
+    height: 100%;
+    padding-bottom: 130px;
+}
+
+.istanbulImg, .dubrovnikImg, .shenandoahImg, .montImg, .buzludzhaImg, .greeceImg, .egyptImg, .rilaImg {
+    width: 100%;
+    height: 100%;
+}
+
+.istanbulImgMain, .greeceImgMain {
+    width: 100%;
+    height: 100%;
+}
+
+.dubrovnikImgMain, .shenandoahImgMain, .montImgMain, .buzludzhaImgMain, .egyptImgMain, .rilaImgMain {
+    width: 100%;
+    height: 100%;
+}
+
+.montImgMain, .rilaImgMain {
+    object-fit: cover;
+}
+
+ .instanbulMainImg, .greeceMainImg {
+    padding-bottom: 30px;
+} 
+
+ .dubrovnikMainImg, .shenandoahMainImg, .montMainImg, .buzludzhahMainImg, .egyptMainImg, .rilaMainImg {
+    padding-bottom: 40px;
+}
+
+/*  .istanbulMain, .dubrovnikMain, .shenandoahMain, .montMain, .buzludzhaMain, .greeceMain, .egyptMain, .rilaMain {
+    grid-column: 1 / span 2;
+} */
+
+.istanbulHeader, .dubrovnikHeader, .shenandoahHeader, .montHeader, .buzludzhaHeader, .greeceHeader, .egyptHeader, .rilaHeader {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    font-weight: bold;
+    background-image: url('../images/backgroundHeader.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.dubrovnikHeader, .montHeader {
+    background-size: 99%;
+} 
+
+.shenandoahHeader {
+    background-size: 110%;
+}
+
+.buzludzhaHeader {
+    background-size: 105%;
+}
+
+.greeceHeader {
+    background-size: 61%;
+}
+
+.egyptHeader {
+    background-size: 75%;
+}
+
+.rilaHeader {
+    background-size: 81%;
+}
+
+.istanbulText, .dubrovnikText, .shenandoahText, .montText, .buzludzhaText, .greeceText, .egyptText, .rilaText {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.istanbulImg1, .istanbulImg2, .istanbulImg3, .istanbulImg4, .dubrovnikImg1, .dubrovnikImg2, .dubrovnikImg3, .shenandoahImg1, 
+.shenandoahImg2, .shenandoahImg3, .montImg1, .montImg2, .montImg3, .buzludzhaImg1, .buzludzhaImg2, .buzludzhaImg3, .greeceImg1, 
+.greeceImg2, .greeceImg3, .greeceImg4, .egyptImg1, .egyptImg2, .egyptImg3, .rilaImg1, .rilaImg2, .rilaImg3 {
+    padding-bottom: 30px;
+}
+
+
+/* For Tablet view */
+@media screen and (min-width: 600px) {
+    .links {
+        margin: 0px 30px;
+    }
+
+    .istanbulHeader {
+        background-size: 45%;
+    }
+
+    .dubrovnikHeader, .montHeader {
+        background-size: 50%;
+    } 
+    
+    .shenandoahHeader {
+        background-size: 54%;
+    }
+    
+    .buzludzhaHeader {
+        background-size: 50%;
+    }
+    
+    .greeceHeader {
+        background-size: 30%;
+    }
+    
+    .egyptHeader {
+        background-size: 38%;
+    }
+    
+    .rilaHeader {
+        background-size: 40%;
+    }
+
+    .instanbulMainImg {
+        padding-bottom: 10px;
+    }
+
+    .aboutImg {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        height: 580px;
+        width: 550px;
+        border: 5px solid #baaaaae1;
+    }
+    
+    .aboutText {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        height: 500px;
+        width: 400px;
+        font-size: 25px;
+    }
+
+    .aboutImg {
+        width: 100%;
+    }
+
+    .gridImages {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 58px;
+    }
+
+    .individualGrids:nth-child(2) {
+        grid-row: span 2;
+    }
+    
+    .individualGrids:last-child {
+        grid-column: span 2;
+    }
+
+    .istanbulBox, .dubrovnikBox, .shenandoahBox, .montBox, .buzludzhaBox, .greeceBox, .egyptBox, .rilaBox {
+        padding-top: 80px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+        padding-bottom: 130px;
+    }
+    
+    .istanbulImg, .dubrovnikImg, .shenandoahImg, .montImg, .buzludzhaImg, .greeceImg, .egyptImg, .rilaImg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .istanbulImgMain, .greeceImgMain {
+        width: 100%;
+        height: 85%;
+    }
+    
+    .dubrovnikImgMain, .shenandoahImgMain, .montImgMain, .buzludzhaImgMain, .egyptImgMain, .rilaImgMain {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .montImgMain, .rilaImgMain {
+        object-fit: cover;
+    }
+    
+    .instanbulMainImg, .greeceMainImg {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .dubrovnikMainImg, .shenandoahMainImg, .montMainImg, .buzludzhahMainImg, .egyptMainImg, .rilaMainImg {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        padding-bottom: 0px;
+    }
+
+    .istanbulMain, .dubrovnikMain, .shenandoahMain, .montMain, .buzludzhaMain, .greeceMain, .egyptMain, .rilaMain {
+        grid-column: 2 / span 3;
+    }
+
+    .istanbulImg1, .istanbulImg2, .istanbulImg3, .istanbulImg4, .dubrovnikImg1, .dubrovnikImg2, .dubrovnikImg3, .shenandoahImg1, 
+    .shenandoahImg2, .shenandoahImg3, .montImg1, .montImg2, .montImg3, .buzludzhaImg1, .buzludzhaImg2, .buzludzhaImg3, .greeceImg1, 
+    .greeceImg2, .greeceImg3, .greeceImg4, .egyptImg1, .egyptImg2, .egyptImg3, .rilaImg1, .rilaImg2, .rilaImg3 {
+        padding-bottom: 0px;
+    }
+}
+
+
+/* For large screen view */
+@media screen and (min-width: 992px) {
+    .links {
+        margin: 0px 50px;
+    }
+
+    .aboutImg {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        height: 580px;
+        width: 550px;
+        border: 5px solid #baaaaae1;
+    }
+    
+    .aboutText {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        height: 500px;
+        width: 600px;
+        font-size: 25px;
+    }
+
+    .istanbulHeader {
+        background-size: 28%;
+    }
+
+    .dubrovnikHeader, .montHeader {
+        background-size: 28%;
+    } 
+    
+    .shenandoahHeader {
+        background-size: 29%;
+    }
+    
+    .buzludzhaHeader {
+        background-size: 30%;
+    }
+    
+    .greeceHeader {
+        background-size: 15%;
+    }
+    
+    .egyptHeader {
+        background-size: 20%;
+    }
+    
+    .rilaHeader {
+        background-size: 22%;
+    }
+
+    .instanbulMainImg, .greeceMainImg {
+        padding-bottom: 0px;
+    } 
+
+
+    .istanbulBox, .dubrovnikBox, .shenandoahBox, .montBox, .buzludzhaBox, .greeceBox, .egyptBox, .rilaBox {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding-bottom: 250px;
+    }
+
+    .iframeBox {
+        display: flex;
+        padding-top: 50px;
+        grid-row: 3;
+        grid-column: 1 / span 4;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iframeHeading{
+        display: flex;
+        padding-top: 50px;
+        grid-row: 3;
+        grid-column: 1 / span 4;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .iframes {
+        display: flex;
+        width: 100%;
+        height: 150%;
+        padding-top: 50px;
+    }
+
+}
