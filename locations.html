@@ -12,7 +12,6 @@
 
 
 <body>
-
     <nav class="navbar">
         <div role="region" class="title-box">
             <a href = "#istanbulBox">Skip to Main content</a>
@@ -29,15 +28,15 @@
         <div class="tBackgroundImg">
             <img src="images/worldMap4.jpg" class="background" alt="Some recent locations that I have traveled to">
         </div>
-    <div class="tContent">
-        <h1 class="tText">Locations</h1>
-        <h2 class="tText2">Some recent locations that I have traveled to</h2>
-    </div>
+        <region class="tContent">
+            <h1 class="tText">Locations</h1>
+            <h2 class="tText2">Some recent locations that I have traveled to</h2>
+        </div> 
     </main>
 
-    <region aria-label="istanbul" role="region" class="istanbulBox" id="istanbulBox">
+    <section aria-label="istanbul" class="istanbulBox" id="istanbulBox">
         <div class="istanbulMain">
-            <h1 class="istanbulHeader">Istanbul, Turkey</h1>
+            <h2 class="istanbulHeader">Istanbul, Turkey</h2>
             <p class="istanbulText">This was a trip I took during summer '22. Traveling by car, the drive took
                 about 9 hours. Staying in the city centre, I used all 4 days to eat amazing food, learn about Turkey's culture,
                 and to photograph as much as the city's beauty as possible. A boat tour down the Bosphorus allowed me to photograph both the 
@@ -51,7 +50,6 @@
         <div class="istanbulImg1">
             <img src="images/IstanbulBridge.jpeg" class="istanbulImg" alt="A bridge in black and white">
             <p class="istanbulImgText">The Bosphorus Bridge shot from below in black and white.</p>
-        </div>
         </div>
         <div class="istanbulImg2">
             <img src="images/IstanbulGeometry.jpeg" class="istanbulImg" alt="A mosque during a clear-sky day">
@@ -67,17 +65,17 @@
         </div>
 
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
             <iframe title="istanbulMap" class="iframes" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=9&center=41.0082%2C28.9784&key=AIzaSyDcYDK2hV9vXmy2lN5EG5s807sTBl-fSQI"></iframe>
         </div>
-    </region>
+    </section>
 
-    <section aria-label="dubrovnik" role="region" class="dubrovnikBox" id="dubrovnikBox">
+    <section aria-label="dubrovnik" class="dubrovnikBox" id="dubrovnikBox">
         <div class="dubrovnikMain">
-            <h1 class="dubrovnikHeader">Dubrovnik, Croatia</h1>
+            <h2 class="dubrovnikHeader">Dubrovnik, Croatia</h2>
             <p class="dubrovnikText">This was a trip I took during summer '23. Staying a 10 minute walk from the famous Fort Lovrijenac, I used the opportunity
                 to take photos of the old city's beautiful architecture. Filled with other tourists who came to view where the famous filming spot for King's Landing
                 from Game of Thrones, taking photos without the presense of people proved to be challenging. I resorted to getting up at early hours (6am!) so I could
@@ -92,7 +90,6 @@
             <img src="images/croatiaOld.jpeg" class="dubrovnikImg" alt="a view of an old church">
             <p class="dubrovnikImgText">A view of Saint Saviour's Church from the bottom up.</p>
         </div>
-        </div>
         <div class="dubrovnikImg2">
             <img src="images/croatiaCat.jpeg" class="dubrovnikImg" alt="A close up of a sleeping cat">
             <p class="dubrovnikImgText">A native cat, peaceful sleeping</p>
@@ -103,7 +100,7 @@
         </div>
 
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
@@ -111,9 +108,9 @@
         </div>
     </section>
 
-    <section aria-label="shenandoah" role="region" class="shenandoahBox" id="shenandoahBox">
+    <section aria-label="shenandoah" class="shenandoahBox" id="shenandoahBox">
         <div class="shenandoahMain">
-            <h1 class="shenandoahHeader">Shenandoah, Virginia</h1>
+            <h2 class="shenandoahHeader">Shenandoah, Virginia</h2>
             <p class="shenandoahText">A fall break trip with fellow UMich students led me to Shenandoah National Park
                 in Virginia. Before leaving for the backpacking trip, I needed to decide whether I would pack light, opting for an
                 easier hike, or to pack my camera gear for photography. I decided that the extra weight would be worth it, and so during the 4-day
@@ -128,7 +125,6 @@
             <img src="images/hikeSky.jpeg" class="shenandoahImg" alt="The sun peaking through clouds">
             <p class="shenandoahImgText">The sun on a cloudy day captured from a peak.</p>
         </div>
-        </div>
         <div class="shenandoahImg2">
             <img src="images/hikeFall.jpeg" class="shenandoahImg" alt="A mountain peak covered in fall foilage">
             <p class="shenandoahImgText">The side of a mountian showing beautiful fall colors.</p>
@@ -138,7 +134,7 @@
             <p class="shenandoahImgText">A pine cone shot in black and white.</p>
         </div>
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
@@ -146,22 +142,21 @@
         </div>
     </section>
 
-    <section aria-label="kotor" role="region" class="montBox" id="montBox">
+    <section aria-label="kotor" class="montBox" id="montBox">
         <div class="montMain">
-            <h1 class="montHeader">Kotor, Montenegro</h1>
+            <h2 class="montHeader">Kotor, Montenegro</h2>
             <p class="montText">Kotor is a beautiful city located on the Bay of Kotor. The small city contains a fortress, beaches, and mountains.
                 While on break here, I mangaged to eat amazing food, see historical places, catch a suntan on the beach, and take a 12.8 km hike
                 up to the top of Krstac Pass. 
             </p>
         </div>
         <div class="montMainImg">
-            <video src="images/montVid.mov" controls class="montImgMain" alt="A body of water with mountains in the background"></video>
+            <video src="images/montVid.mov" controls class="montImgMain"></video>
             <p class="montImgText">Video - shot on iPhone. The Bay of Kotor as seen during a speedboat ride.</p>
         </div>
         <div class="montImg1">
             <img src="images/MontBrick.jpeg" class="montImg" alt="A city view taken from above">
             <p class="montImgText">A view of the city taken from a lookout point in the fortress.</p>
-        </div>
         </div>
         <div class="montImg2">
             <img src="images/montSky.jpeg" class="montImg" alt="A clock tower on a sunny day">
@@ -172,7 +167,7 @@
             <p class="montImgText">The view from Krstac Pass, during early morning hours.</p>
         </div>
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
@@ -180,9 +175,9 @@
         </div>
     </section>
 
-    <section aria-label="buzludzha" role="region" class="buzludzhaBox" id="buzludzhaBox">
+    <section aria-label="buzludzha" class="buzludzhaBox" id="buzludzhaBox">
         <div class="buzludzhaMain">
-            <h1 class="buzludzhaHeader">Buzludzha, Bulgaria</h1>
+            <h2 class="buzludzhaHeader">Buzludzha, Bulgaria</h2>
             <p class="buzludzhaText"> This 5 hour roadtrip began at 3:30 am on a summer day. The goal was to catch sunrise on Buzludzha 
                 Peak in Bulgaria, my family's native country. While this site is off-limits for entering, visitors are free to photograph 
                 the outside of Buzludzha, an old building constructed during the country's communist era. 
@@ -196,7 +191,6 @@
             <img src="images/BulgariaComClose.jpeg" class="buzludzhaImg" alt="A view from a mountain-top">
             <p class="buzludzhaImgText">The sunrise view with the building in the foreground.</p>
         </div>
-        </div>
         <div class="buzludzhaImg2">
             <img src="images/bulgariaPeak.jpeg" class="buzludzhaImg" alt="Buzludzha monument">
             <p class="buzludzhaImgText">Buzludzha in full, captured during sunrise.</p>
@@ -206,7 +200,7 @@
             <p class="buzludzhaImgText">Sunrise captured from the peak.</p>
         </div>
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
@@ -214,9 +208,9 @@
         </div>
     </section>
 
-    <section aria-label="greece" role="region" class="greeceBox" id="greeceBox">
+    <section aria-label="greece" class="greeceBox" id="greeceBox">
         <div class="greeceMain">
-            <h1 class="greeceHeader">Greece</h1>
+            <h2 class="greeceHeader">Greece</h2>
             <p class="greeceText"> This roadtrip took me through the entire country of Greece, from northest mainland point, 
                 to the greek islands. Some of the stops included Thessaloniki, Meteora, Delphi, Athens, Santorini, and Parga. Along the way,
                 I took as many photos as possible and had one of the most memorable trips of my life.
@@ -229,7 +223,6 @@
         <div class="greeceImg1">
             <img src="images/athensSky.jpeg" class="greeceImg" alt="A belltower during sunset">
             <p class="greeceImgText">Sunset from Lycabettus Hill in Athens</p>
-        </div>
         </div>
         <div class="greeceImg2">
             <img src="images/greeceSky.jpeg" class="greeceImg" alt="Ancient ruins during daytime">
@@ -244,7 +237,7 @@
             <p class="greeceImgText">A famous windmill in Santorini.</p>
         </div>
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
@@ -252,9 +245,9 @@
         </div>
     </section>
 
-    <section aria-label="egypt" role="region" class="egyptBox" id="egyptBox">
+    <section aria-label="egypt" class="egyptBox" id="egyptBox">
         <div class="egyptMain">
-            <h1 class="egyptHeader">Cairo, Egypt</h1>
+            <h2 class="egyptHeader">Cairo, Egypt</h2>
             <p class="egyptText"> Traveling to Egypt was an unexpected opportunity that arose from a close friend's 
                 invite. Opting to pack light, I chose to not take my photography equipment and for this reason, all photos
                 were taken with an iPhone. Nevertheless, it was an amazing experience and although not the best pictures were taken,
@@ -269,7 +262,6 @@
             <img src="images/eygptSkyline.jpeg" class="egyptImg" alt="A view of the city from above">
             <p class="egyptImgText">Cairo from above, taken from the Mosque of Muhammad Ali.</p>
         </div>
-        </div>
         <div class="egyptImg2">
             <img src="images/eygptCamel.jpeg" class="egyptImg" alt="A camel">
             <p class="egyptImgText">One of the many camels at the Great Pyramids of Giza.</p>
@@ -279,7 +271,7 @@
             <p class="egyptImgText">A pitcure of a pyramid from afar.</p>
         </div>
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
@@ -287,9 +279,9 @@
         </div>
     </section>
 
-    <section aria-label="rila" role="region" class="rilaBox" id="rilaBox">
+    <section aria-label="rila" class="rilaBox" id="rilaBox">
         <div class="rilaMain">
-            <h1 class="rilaHeader">Rila, Bulgaria</h1>
+            <h2 class="rilaHeader">Rila, Bulgaria</h2>
             <p class="rilaText"> I've taken two hiking trips in the Rila mountains, one to the Seven Rila Lakes, and another to Musala peak,
                 the sixth highest peak in all of mainland Europe. Although quite a difficult journey (I hadn't packed my hiking boots!), the experience 
                 was unforgettable. This trip was taken on a national holiday, so their were much more hikers than usual. The weather was perfect, and all 
@@ -297,13 +289,12 @@
             </p>
         </div>
         <div class="rilaMainImg">
-            <video src="images/rilaVid.mov" controls class="rilaImgMain" alt="The Seven Rila Lakes"></video>
+            <video src="images/rilaVid.mov" controls class="rilaImgMain"></video>
             <p class="rilaImgText">A video showing each of the Seven Rila Lakes from the peak.</p>
         </div>
         <div class="rilaImg1">
             <img src="images/rilaSky.jpeg" class="rilaImg" alt="A mountain on a sunny day">
             <p class="rilamgText">Taken halfway through the Seven Rila Lakes hike.</p>
-        </div>
         </div>
         <div class="rilaImg2">
             <img src="images/rilaMountain.jpeg" class="rilaImg" alt="A mountain peak">
@@ -314,14 +305,13 @@
             <p class="rilaImgText">The night sky filled with stars taken from the mountain.</p>
         </div>
         <div class="iframeHeading">
-            <h1>Map:</h1>
+            <h2>Map:</h2>
         </div>
 
         <div class="iframeBox">
             <iframe title="rilaMap" class="iframes" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=11&center=42.1792%2C23.5852&key=AIzaSyDcYDK2hV9vXmy2lN5EG5s807sTBl-fSQI"></iframe>
         </div>
     </section>
-    </main>
 
     <footer>
         <div class="footer">
